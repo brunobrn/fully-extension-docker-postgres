@@ -18,7 +18,6 @@ The objective is make the tests more easier in Postgres with this extensions alr
 
 The env inputs are the same of postgres official images, you can check the official documentation [here](https://hub.docker.com/_/postgres).
 
-```
 
 ``` sh
 docker run -e POSTGRES_PASSWORD=your_password fariasbrunobrn/postgres-fully-extension:<TAG>
