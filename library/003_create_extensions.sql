@@ -1,0 +1,12 @@
+CREATE EXTENSION pg_cron;
+CREATE EXTENSION pg_partman;
+CREATE EXTENSION hypopg;
+CREATE EXTENSION pg_freespacemap;
+CREATE EXTENSION pg_repack;
+CREATE EXTENSION pg_stat_statements;
+CREATE EXTENSION pg_trgm;
+CREATE EXTENSION pgrowlocks;
+CREATE EXTENSION pgstattuple;
+CREATE EXTENSION postgres_fdw;
+CREATE EXTENSION tablefunc;
+CREATE EXTENSION "uuid-ossp";

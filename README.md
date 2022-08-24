@@ -22,17 +22,7 @@ The env inputs are the same of postgres official images, you can check the offic
 ``` sh
 docker run -e POSTGRES_PASSWORD=your_password fariasbrunobrn/postgres-fully-extension:<TAG>
 ``` 
-
-To active **pg_cron** or **pg_stat_statements** you need to use -c input to configure some parameters, like below
-
-```sh
-# pg_cron
--c shared_preload_libraries='pg_cron' -c cron.database_name='postgres'
-
-# pg_stat_statements
--c shared_preload_libraries='pg_stat_statements'
-```
-
+or
 ``` sh
-docker run -e POSTGRES_DB=postgres -e POSTGRES_USER=user_app -e POSTGRES_PASSWORD=your_password fariasbrunobrn/postgres-fully-extension -c shared_preload_libraries='pg_stat_statements,pg_cron' -c cron.database_name='postgres'
+docker run -e POSTGRES_DB=database_name -e POSTGRES_USER=user_app -e POSTGRES_PASSWORD=your_password fariasbrunobrn/postgres-fully-extension
 ``` 

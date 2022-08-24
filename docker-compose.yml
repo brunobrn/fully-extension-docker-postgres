@@ -8,8 +8,6 @@ services:
         POSTGRES_USER: app_user
         POSTGRES_PASSWORD: powerfull_password
         POSTGRES_DB: app_database
-      command: >
-        -c shared_preload_libraries='pg_stat_statements,pg_cron' -c cron.database_name='app_database'
       ports:
         - 5432:5432
 volumes:
